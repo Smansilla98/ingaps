@@ -1,36 +1,31 @@
+
+<br><br><br>
 @extends('layouts.adm')
 @section('content')
-<br><br><br>
-
 <h1 class='text-center'>
-Listado de insumos</h1>
+Listado de Insumo</h1>
 
-<div class="table-responsive container-fluid">
-  <table class="table container-fluid">
+<div class="table-responsive container">
+  <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Producto</th>
-        <th scope="col">Modelo</th>
+        <th scope="col">Insumo</th>
+        <th scope="col">Ficha(Ver)</th>
+        <th scope="col">Imagen(Ver)</th>
         <th scope="col">Descripcion</th>
-        <th scope="col">Cantidad</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Correo</th>
-        <th scope="col">Mensaje</th>
-        <th scope="col">Fecha realizada</th>
-      </tr>
+        <th scope="col">Categoria</th>
+        <th scope="col">Seccion</th>
+        </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td><td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Editar</button>
+        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Editar</button>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                    <div class="modal-content">
@@ -71,27 +66,12 @@ Listado de insumos</h1>
                   </div>
               </div></td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      <tr>
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
+      
     </tbody>
   </table>
 </div>
+@endsection
+
+@section('javascript')
+
+@endsection

@@ -10,7 +10,7 @@ Listado de consultas recibidas via Web
   <table class="table container-fluid">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">Id</th>
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
         <th scope="col">Telefono</th>
@@ -23,7 +23,7 @@ Listado de consultas recibidas via Web
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <td>1</td>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
@@ -33,27 +33,7 @@ Listado de consultas recibidas via Web
         <td>Cell</td>
         <td>Cell</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      <tr>
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
+      
     </tbody>
   </table>
 </div>

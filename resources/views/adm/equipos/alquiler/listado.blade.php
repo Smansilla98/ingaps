@@ -1,30 +1,24 @@
+
+<br><br><br>
 @extends('layouts.adm')
 @section('content')
-<br><br><br>
-
 <h1 class='text-center'>
-Listado de Equipos para alquiler</h1>
+Listado de Equipos para Alquiler</h1>
 
-<div class="table-responsive container-fluid">
-  <table class="table container-fluid">
+<div class="table-responsive container">
+  <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Producto</th>
-        <th scope="col">Modelo</th>
+        <th scope="col">Ficha(Ver)</th>
+        <th scope="col">Imagen(Ver)</th>
         <th scope="col">Descripcion</th>
-        <th scope="col">Cantidad</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Correo</th>
-        <th scope="col">Mensaje</th>
-        <th scope="col">Fecha realizada</th>
-      </tr>
+        <th scope="col">Categoria</th>
+        <th scope="col">Modelo</th>
+        </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
-        <td>Cell</td>
-        <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
         <td>Cell</td>
@@ -72,28 +66,12 @@ Listado de Equipos para alquiler</h1>
                   </div>
               </div></td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      <tr>
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
+      
     </tbody>
   </table>
 </div>
+@endsection
+
+@section('javascript')
+
 @endsection
