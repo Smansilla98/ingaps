@@ -26,7 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/adm', 'adm\AdmController@index')->name('adm');
 
 //* Ruta de datos de la empresa//
-Route::get('/adm/empresa', 'adm\EmpresaController@index');
+Route::get('/adm/empresa', 'adm\EmpresaController@index')->name('datos-index');
+
+Route::post('/adm/empresa', 'adm\EmpresaController@save')->name('datos-save');
 
 //* Ruta de consultas via web//
 Route::get('/adm/consultas', 'adm\ConsultaController@index');

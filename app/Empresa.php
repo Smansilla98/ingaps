@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Empresa extends Model
 { //Modelo enlazado a la tabla
-    protected $table ="empresas";
+    protected $table ='empresas';
     //listado de items
     protected $fillable =[
         'id',
