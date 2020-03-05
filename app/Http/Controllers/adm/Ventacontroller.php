@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\adm;
-
+use App\Equipo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +13,11 @@ class Ventacontroller extends Controller
     }
     public function listado()
     {
-        return view('adm.equipos.venta.listado');
+        $equipos = Equipo::where('orden', 'equipos');
+        
+    
+        return view('adm.equipos.venta.listado')->with(compact('equipos')); 
+
     }
     public function eliminar()
     {

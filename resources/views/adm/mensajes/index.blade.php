@@ -7,7 +7,8 @@
 Listado de Mensajes recibidos via Web
 </h1>
 
-<div class="table-responsive container-fluid">
+
+<div class="row mt-4">
   <table class="table container-fluid">
     <thead>
       <tr>
@@ -16,34 +17,21 @@ Listado de Mensajes recibidos via Web
         <th scope="col">Correo</th>
         <th scope="col">Fecha</th>
         <th scope="col">Mensaje</th>
-       
       </tr>
     </thead>
     <tbody>
+      @foreach($mensajes as $mensaje)
       <tr>
-        <th scope="row">1</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-    
-      <tr>
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-     
-      </tr>
+        <th scope="row">{{$mensaje->id}}</th>
+        <td>{{$mensaje->data['nombre']}}</td>
+        <td>{{$mensaje->data['correo']}}</td>
+        <td>{{$mensaje->data['fecha']}}</td>
+        <td>{{$mensaje->data['mensaje']}}</td>
+      @endforeach
     </tbody>
   </table>
+
+
 </div>
 @endsection
 

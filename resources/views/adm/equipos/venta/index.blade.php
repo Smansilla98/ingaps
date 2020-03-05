@@ -5,6 +5,7 @@
 Ingreso de equipos para Venta
   </h1>
 <div class="panel-body container">
+
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">+ Nueva Categoria</button>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -16,10 +17,10 @@ Ingreso de equipos para Venta
                          </button>
                       </div>
                       <div class="modal-body">
-                        <form action="" method="post" enctype="multipart/form-data">
+                        <form action="{{route('adm-equipos-nuevo')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <label>Orden:</label>
-                        <input type="text" id="nombreCategoria" class="form-control">
+                        <input type="text" id="" class="form-control">
                         <small>Indique orden de aparicion</small><br>
                         <label>Nombre:</label>
                         <input type="text" id="nombreCategoria" class="form-control">
@@ -36,12 +37,12 @@ Ingreso de equipos para Venta
                   </div>
                   </div>
               </div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">+ Nueva Marca</button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModalSm">+ Nueva Marca</button>
+              <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="centralModalSmLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                    <div class="modal-content">
                     <div class="modal-header">
-                       <h5 class="modal-title" id="exampleModalLabel">Nueva Marca</h5>
+                       <h5 class="modal-title" id="centralModalSm">Nueva Marca</h5>
                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                        <span aria-hidden="true">&times;</span>
                          </button>
@@ -71,7 +72,7 @@ Ingreso de equipos para Venta
         <div id = "msg"></div>
      
         <br><form id="form1" method="POST">
-            <div class="row">
+            <div class="row">  
 
                 <input type="hidden" id="id" name="id" class="form-control">
                 <div class="form-group col-lg-12">
@@ -96,7 +97,7 @@ Ingreso de equipos para Venta
             <div class="form-group col-lg-6">
               <label>Seleccione Marca<select type="select" id=""name="" value=""></label>
             </div>
-                 
+            
             </div></form>
     </div>
     

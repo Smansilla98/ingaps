@@ -27,21 +27,20 @@ Route::get('/adm', 'adm\AdmController@index')->name('adm');
 
 //* Ruta de datos de la empresa//
 Route::get('/adm/empresa', 'adm\EmpresaController@index')->name('datos-index');
-
 Route::post('/adm/empresa', 'adm\EmpresaController@save')->name('datos-save');
 
 //* Ruta de consultas via web//
 Route::get('/adm/consultas', 'adm\ConsultaController@index');
 
 //* Ruta de mensajes via web//
-Route::get('/adm/mensajes', 'adm\MensajeController@index');
+Route::get('/adm/mensajes', 'adm\MensajeController@index')->name('mensajes');
 //* Ruta de cotizaciones solicitadas via web//
 Route::get('/adm/cotizaciones', 'adm\CotizacionController@index');
 
 //*EQUIPOS //
 //* Equipos de Venta - CRUD//
 //Ingreso de equipo Nuevo//
-Route::get('/adm/equipos/venta/nuevo', 'adm\VentaController@index');
+Route::get('/adm/equipos/venta/nuevo', 'adm\VentaController@index')->name('adm-equipos-nuevo');
 Route::get('/adm/equipos/venta/editar', 'adm\VentaController@editar');
 Route::get('/adm/equipos/venta/eliminar', 'adm\VentaController@eliminar');
 //listado de equipos de venta//

@@ -21,38 +21,18 @@ Listado de Cotizaciones recibidas</h1>
       </tr>
     </thead>
     <tbody>
+      @foreach($cotizaciones as $cotizacion)
       <tr>
-        <th scope="row">ID</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      <tr>
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
+        <th scope="row">{{$cotizacion->id}}</th>
+        <td>{{$cotizacion->data['producto']}}</td>
+        <td>{{$cotizacion->data['modelo']}}</td>
+        <td>{{$cotizacion->data['descripcion']}}</td>
+        <td>{{$cotizacion->data['cantidad']}}</td>
+        <td>{{$cotizacion->data['nombre']}}</td>
+        <td>{{$cotizacion->data['correo']}}</td>
+        <td>{{$cotizacion->data['mensaje']}}</td>
+        <td>{{$cotizacion->data['fechaRealizada']}}</td>
+        @endforeach
     </tbody>
   </table>
 </div>

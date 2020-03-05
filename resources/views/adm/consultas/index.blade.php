@@ -22,18 +22,18 @@ Listado de consultas recibidas via Web
       </tr>
     </thead>
     <tbody>
+      @foreach($consultas as $consulta)
       <tr>
-        <td>1</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      
+        <th scope="row">{{$consulta->id}}</th>
+        <td>{{$consulta->data['nombre']}}</td>
+        <td>{{$consulta->data['apellido']}}</td>
+        <td>{{$consulta->data['telefono']}}</td>
+        <td>{{$consulta->data['correo']}}</td>
+        <td>{{$consulta->data['empresa']}}</td>
+        <td>{{$consulta->data['actividad']}}</td>
+        <td>{{$consulta->data['mensaje']}}</td>
+        <td>{{$consulta->data['archivo']}}</td>
+      @endforeach
     </tbody>
   </table>
 </div>

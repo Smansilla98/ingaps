@@ -36,12 +36,12 @@ Ingreso de equipos para alquiler
                   </div>
                   </div>
               </div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">+ Nueva Marca</button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModalSm">+ Nueva Marca</button>
+              <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="centralModalSmLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                    <div class="modal-content">
                     <div class="modal-header">
-                       <h5 class="modal-title" id="exampleModalLabel">Nueva Marca</h5>
+                       <h5 class="modal-title" id="centralModalSmLabel">Nueva Marca</h5>
                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                        <span aria-hidden="true">&times;</span>
                          </button>
@@ -94,7 +94,7 @@ Ingreso de equipos para alquiler
               <label>Seleccione Categoria<select type="select" id=""name="" value=""></label>
             </div>
             <div class="form-group col-lg-6">
-              <label>Seleccione Categoria<select type="select" id=""name="" value=""></label>
+              <label>Seleccione Modelo<select type="select" id=""name="" value=""></label>
             </div>
                  
             </div></form>
