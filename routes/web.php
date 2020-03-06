@@ -24,6 +24,7 @@ Auth::routes([
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/adm', 'adm\AdmController@index')->name('adm');
+Route::post('/adm', 'adm\AdmController@index')->name('adm');
 
 //* Ruta de datos de la empresa//
 Route::get('/adm/empresa', 'adm\EmpresaController@index')->name('datos-index');
