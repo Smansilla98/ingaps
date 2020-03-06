@@ -14,58 +14,53 @@ Ingreso de insumos
                         
                        <div class="table-responsive container">
                         <table class="table">
-                          
-                         <thead>
-                           
+                          <thead>
                            <tr>
+                              <th scope="col">Orden</th>
                               <th scope="col">Nombre</th>
-                              <th scope="col">Indique orden de aparicion</th>
-                              <th scope="col">Icono</th>
+                              <th scope="col">Imagen</th>
                               <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Nuevo</button>
                                 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
                                   <div class="modal-dialog" role="document">
                                    <div class="modal-content">
                                     <div class="modal-header">
-                                     <h5 class="modal-title" id="exampleModal1Label">Nueva Categoria</h5>
-                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                     <span aria-hidden="true">&times;</span>
-                                                       </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                      <form id="form1" method="POST">
-                                                        <div class="row">
-                                            
-                                                            <input type="hidden" id="id" name="id" class="form-control">
-                                                          
-                                                            <div class="form-group col-lg-12">
-                                                                <label>Nombre del producto:</label>
-                                                                <input type="text" id="txtNombre" name="txtNombre" class="form-control">
-                                                            </div>
-                                                            <div class="form-group col-lg-12">
-                                                              <label>Ficha tecnica</label>
-                                                              <input type="file" id="txtPrecio" name="txtPrecio" class="form-control">
-                                                          </div>
-                                                          <div class="form-group col-lg-12">
-                                                              <label>Imagen</label>
-                                                              <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
-                                                          </div>
-                                                          <div class="form-group col-lg-12">
-                                                            <label>Descripcion</label>
-                                                            <input type="textarea" id="txtStockMax" name="txtStockMax" class="form-control">
-                                                        </div>
-                                                       
-                                                        </div></form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                      <button type="button" class="btn btn-primary">Guardar Cambios</button>
-                                                 </div>
-                                                </div>
-                                                </div>
-                                            </div></th>
+                                     <h5 class="modal-title" id="exampleModal1Label">Categorias de insumos</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form id="form1" method="POST">
+                                        <div class="row">
+                                          <input type="hidden" id="id" name="id" class="form-control">
+                                            <div class="form-group col-lg-12">
+                                              <label>Orden:</label>
+                                                <input type="text" id="txtNombre" name="txtNombre" class="form-control">
+                                            </div>
+                                            <div class="form-group col-lg-12">
+                                              <label>Nombre</label>
+                                                <input type="text" id="txtPrecio" name="txtPrecio" class="form-control">
+                                            </div>
+                                            <div class="form-group col-lg-12">
+                                              <label>Imagen</label>
+                                                <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
+                                            </div>
+                                        </div>
+                                      </form>
+                                      </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                      <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div></th>
                            </tr>
-                         </thead>
+                          </thead>
                          <tbody>
+                           <td></td>
+                           <td></td>
+                           <td></td>
                            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Editar</button>
                             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
                               <div class="modal-dialog" role="document">
@@ -83,22 +78,18 @@ Ingreso de insumos
                                                         <input type="hidden" id="id" name="id" class="form-control">
                                                       
                                                         <div class="form-group col-lg-12">
-                                                            <label>Nombre del producto:</label>
+                                                            <label>Orden:</label>
                                                             <input type="text" id="txtNombre" name="txtNombre" class="form-control">
                                                         </div>
                                                         <div class="form-group col-lg-12">
-                                                          <label>Ficha tecnica</label>
-                                                          <input type="file" id="txtPrecio" name="txtPrecio" class="form-control">
+                                                          <label>Nombre</label>
+                                                          <input type="text" id="txtPrecio" name="txtPrecio" class="form-control">
                                                       </div>
                                                       <div class="form-group col-lg-12">
                                                           <label>Imagen</label>
                                                           <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
                                                       </div>
-                                                      <div class="form-group col-lg-12">
-                                                        <label>Descripcion</label>
-                                                        <input type="textarea" id="txtStockMax" name="txtStockMax" class="form-control">
-                                                    </div>
-                                                   
+                                                                                                        
                                                     </div></form>
                                                 </div>
                                                 <div class="modal-footer">
@@ -136,24 +127,19 @@ Ingreso de insumos
                         </div>
                     </div>
                     </div>
-                </div>
-  
+                </div> 
    
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Seccion">Seccion</button>
                 <div class="modal fade" id="Seccion" tabindex="-1" role="dialog" aria-labelledby="Seccion" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                      <div class="modal-content">
-                      <div class="modal-body"><h1 class='text-center'>Listado de Seccion</h1>                        
-                        
+                      <div class="modal-body"><h1 class='text-center'>Listado de Seccion</h1>    
                        <div class="table-responsive container">
-                        <table class="table">
-                          
-                         <thead>
-                           
+                        <table class="table">                          
+                         <thead>                           
                            <tr>
                               <th scope="col">Orden</th>
                               <th scope="col">Nombre</th>
-                              <th scope="col">Logo</th>
                               <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevaSeccion">Nuevo</button>
                                 <div class="modal fade" id="nuevaSeccion" tabindex="-1" role="dialog" aria-labelledby="nuevaSeccion" aria-hidden="true">
                                   <div class="modal-dialog" role="document">
@@ -176,15 +162,12 @@ Ingreso de insumos
                                           <label>Nombre</label>
                                            <input type="text" id="txtPrecio" name="txtPrecio" class="form-control">
                                          </div>
-                                         <div class="form-group col-lg-12">
-                                          <label>Logo</label>
-                                           <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
-                                         </div>
+                                         
                                          </div></form>
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                      <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                                      <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                                                  </div>
                                                 </div>
                                                 </div>
@@ -192,6 +175,9 @@ Ingreso de insumos
                            </tr>
                          </thead>
                          <tbody>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editarmarca">Editar</button>
                             <div class="modal fade" id="editarmarca" tabindex="-1" role="dialog" aria-labelledby="editarmarca" aria-hidden="true">
                               <div class="modal-dialog" role="document">
@@ -225,7 +211,7 @@ Ingreso de insumos
                                                 </div>
                                                 <div class="modal-footer">
                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                  <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                                  <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                                              </div>
                                             </div>
                                             </div>
@@ -244,7 +230,7 @@ Ingreso de insumos
                                          </div>
                                          <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                                          <button type="button" class="btn btn-primary">Si</button>
+                                          <button type="submit" class="btn btn-primary">Si</button>
                                              </div>
                                             </div>
                                             </div>
@@ -253,15 +239,11 @@ Ingreso de insumos
                                 </tbody>
                             </table>
                           </div>
-                          
-                        
                         </div>
-                    </div>
+                      </div>
                     </div>
                 </div>
-  
-  
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Guardar</button>
+               <button type="submit" class="btn btn-secondary" data-dismiss="modal">Guardar</button>
                   <div id = "msg"></div>
                   <br><form id="form1" method="POST">
                     <div class="form-group col-lg-12 row">                

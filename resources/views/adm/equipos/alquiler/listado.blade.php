@@ -14,6 +14,7 @@ Listado de Equipos para Alquiler</h1>
         <th scope="col">Imagen(Ver)</th>
         <th scope="col">Descripcion</th>
         <th scope="col">Categoria</th>
+        <th scope="col">Año</th>
         <th scope="col">Modelo</th>
         </tr>
     </thead>
@@ -26,9 +27,11 @@ Listado de Equipos para Alquiler</h1>
         <td>{{$equipo->data['ficha']}}</td>
         <td>{{$equipo->data['imagen']}}</td>
         <td>{{$equipo->data['descripcion']}}</td>
+        <td>{{$equipo->data['año']}}</td>
         <td>{{$equipo->data['categoria']}}</td>
         <td>{{$equipo->data['modelo']}}</td>
       @endforeach
+
         <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Editar</button>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -42,14 +45,13 @@ Listado de Equipos para Alquiler</h1>
                       <div class="modal-body">
                         <form id="form1" method="POST">
                           <div class="row">
-              
-                              <input type="hidden" id="id" name="id" class="form-control">
+                            <input type="hidden" id="id" name="id" class="form-control">
                               <div class="form-group col-lg-12">
-                                  <label>Nombre del producto:</label>
-                                  <input type="text" id="txtNombre" name="txtNombre" class="form-control">
+                                <label>Producto:</label>
+                                 <input type="text" id="txtNombre" name="txtNombre" class="form-control">
                               </div>
-                              <div class="form-group col-lg-12">
-                                <label>Ficha tecnica</label>
+                          <div class="form-group col-lg-12">
+                                <label>Ficha</label>
                                 <input type="file" id="txtPrecio" name="txtPrecio" class="form-control">
                             </div>
                             <div class="form-group col-lg-12">
@@ -60,12 +62,17 @@ Listado de Equipos para Alquiler</h1>
                               <label>Descripcion</label>
                               <input type="textarea" id="txtStockMax" name="txtStockMax" class="form-control">
                           </div>
+                          <div class="form-group col-lg-12">
+                            <label>Año</label>
+                              <input type="text" id="txtStockMax" name="txtStockMax" class="form-control">
+                          </div>
                           <div class="form-group col-lg-6">
                             <label>Seleccione Categoria<select type="select" id=""name="" value=""></label>
                           </div>
-                          <div class="form-group col-lg-6">
-                            <label>Seleccione Modelo<select type="select" id=""name="" value=""></label>
-                          </div>
+                          <div class="form-group col-lg-12">
+                            <label>Seleccione Marca</label>
+                              <select type="option" id="txtNombre" name="txtNombre" class="form-control">
+                         </div>
                                
                           </div></form>
                       </div>
