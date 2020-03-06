@@ -3,7 +3,7 @@
 <br><br><br>
 <h1 class='text-center'>
 Ingreso de equipos para alquiler
-  </h1>
+ </h1>
 
  <!--Categorias --> 
 <div class="panel-body container">
@@ -32,7 +32,7 @@ Ingreso de equipos para alquiler
                                                      </button>
                                                   </div>
                                                   <div class="modal-body">
-                                                    <form  action="{{route('categorias-nuevo')}}" id="nuevaCategoria" method="post" enctype="multipart/form-data">
+                                                    <form  action="" id="nuevaCategoria" method="post" enctype="multipart/form-data">
                                                       @csrf
                                                       <div class="row">
                                           

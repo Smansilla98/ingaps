@@ -1,11 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Categoria;
+namespace App\Http\Controllers\adm;
+
 use Illuminate\Http\Request;
+use App\Categoria;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Str as Str;
+
+
 
 
 class CategoriaController extends Controller
@@ -16,7 +21,7 @@ class CategoriaController extends Controller
         Esta función se encarga de cargar la vista de categorias
         */
         $categorias = Categoria::orderBy('orden','ASC')->get();
-        return view('categorias-nuevo')->with(compact('categorias'));
+        return view('adm-equipos-alquiler')->with(compact('categorias'));
     }
     public function save(Request $request)
     {
