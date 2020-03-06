@@ -47,6 +47,10 @@ Route::get('/adm/equipos/venta/editar', 'adm\VentaController@editar');
 Route::get('/adm/equipos/venta/eliminar', 'adm\VentaController@eliminar');
 //listado de equipos de venta//
 Route::get('/adm/equipos/venta/listado', 'adm\VentaController@listado');
+//* Categorias Nuevas - CRUD//
+Route::get('/adm/equipos/venta/nuevo', 'adm\CategoriaController@nuevo')->name('categorias-nuevo');
+Route::post('/adm/equipos/venta/nuevo', 'adm\CategoriaController@nuevo')->name('categorias-nuevo');
+Route::post('/adm/equipos/venta/nuevo', 'adm\CategoriaController@save')->name('categorias-nuevo');
 
 //* Equipos de Alquiler - CRUD//
 Route::get('/adm/equipos/alquiler/nuevo', 'adm\AlquilerController@index');

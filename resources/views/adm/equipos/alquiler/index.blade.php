@@ -12,50 +12,49 @@ Ingreso de equipos para alquiler
               " aria-hidden="true">
                   <div class="modal-dialog" role="document">
                    <div class="modal-content">
-                    <div class="modal-body"><h1 class='text-center'>Listado de categorias</h1>                        
+                    <div class="modal-body"><h1 class='text-center'>Listado de categorias </h1>                        
                       
                      <div class="table-responsive container">
-                      <table class="table">
-                        
-                       <thead>
-                         
+                      <table class="table">                        
+                       <thead>                         
                          <tr>
                             <th scope="col">Orden</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Icono</th>
-                            <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Nuevo</button>
-                              <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevaCategoria">Nuevo</button>
+                              <div class="modal fade" id="nuevaCategoria" tabindex="-1" role="dialog" aria-labelledby="nuevaCategoria" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                  <div class="modal-content">
                                   <div class="modal-header">
-                                   <h5 class="modal-title" id="exampleModal1Label">Nueva Categoria</h5>
+                                   <h5 class="modal-title" id="nuevaCategoria">Nueva Categoria</h5>
                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                    <span aria-hidden="true">&times;</span>
                                                      </button>
                                                   </div>
                                                   <div class="modal-body">
-                                                    <form id="form1" method="POST">
+                                                    <form  action="{{route('categorias-nuevo')}}" id="nuevaCategoria" method="post" enctype="multipart/form-data">
+                                                      @csrf
                                                       <div class="row">
                                           
                                                           <input type="hidden" id="id" name="id" class="form-control">
                                                         
                                                           <div class="form-group col-lg-12">
                                                               <label>Orden:</label>
-                                                              <input type="text" id="txtNombre" name="txtNombre" class="form-control">
+                                                              <input type="text" id="orden" name="txtNombre" class="form-control">
                                                           </div>
                                                           <div class="form-group col-lg-12">
                                                             <label>Nombre</label>
-                                                            <input type="text" id="txtPrecio" name="txtPrecio" class="form-control">
+                                                            <input type="text" id="nobmre" name="txtPrecio" class="form-control">
                                                         </div>
                                                         <div class="form-group col-lg-12">
                                                             <label>Icono</label>
-                                                            <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
+                                                            <input type="file" id="icono" name="txtFechaAlta" class="form-control" >
                                                         </div>                                                     
                                                       </div></form>
                                                   </div>
                                                   <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                                    <button method="post" type="submit" class="btn btn-primary">Guardar Cambios</button>
                                                </div>
                                               </div>
                                               </div>
@@ -144,7 +143,7 @@ Ingreso de equipos para alquiler
                          <tr>
                             <th scope="col">Orden</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Logo</th>
+                            <th scope="col">Icono</th>
                             <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevaMarca">Nuevo</button>
                               <div class="modal fade" id="nuevaMarca" tabindex="-1" role="dialog" aria-labelledby="nuevaMarca" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -168,7 +167,7 @@ Ingreso de equipos para alquiler
                                                             <input type="text" id="txtPrecio" name="txtPrecio" class="form-control">
                                                         </div>
                                                         <div class="form-group col-lg-12">
-                                                            <label>Logo</label>
+                                                            <label>Icono</label>
                                                             <input type="file" id="txtFechaAlta" name="txtFechaAlta" class="form-control" >
                                                         </div>                                                     
                                                       </div></form>
