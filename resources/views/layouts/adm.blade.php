@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-            <html lang="es">
-                <head>
-                    <meta charset="utf-8" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                    <meta name="description" content="" />
-                    <meta name="author" content="" />
-                    <title>Ingaps Admin</title>
-                    <link href="{{asset('https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" crossorigin="anonymous" />
-                    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js')}}" crossorigin="anonymous"></script>
-                    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
-</head>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+            <title>Ingaps Admin</title>
+            <link href="{{asset('https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" crossorigin="anonymous" />
+            <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js')}}" crossorigin="anonymous"></script>
+            <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+       </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -37,6 +37,9 @@
                                 <a class="nav-link" href="{{url('adm/mensajes')}}"><div class="sb-nav-link-icon"></div>Mensajes</a>
                                 <a class="nav-link" href="{{url('adm/cotizaciones')}}"><div class="sb-nav-link-icon"></div>Solicitud de cotizaciones</a>
                           
+                            <div class="sb-sidenav-menu-heading">Categorias</div>
+                                <a class="nav-link" href="{{url('adm/categorias')}}"><div class="sb-nav-link-icon"></div>Categorias</a>
+
                             <div class="sb-sidenav-menu-heading">Equipos</div>
                                 <a class="nav-link collapsed" href="{{url('adm/equipos/alquiler')}}" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                     <div class="sb-nav-link-icon"></div>Alquiler<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>

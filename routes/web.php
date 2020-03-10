@@ -58,9 +58,21 @@ Route::get('/adm/equipos/alquiler/eliminar', 'adm\AlquilerController@eliminar');
 //listado de equipos de Alquler//
 Route::get('/adm/equipos/alquiler/listado', 'adm\AlquilerController@listado');
 
+//categorias //
+
+Route::get('/adm/categorias', 'adm\CategoriaController@index')->name('categoria-index');
+Route::post('/adm/categorias', 'adm\CategoriaController@index')->name('categoria-index');
+Route::post('/adm/categorias', 'adm\CategoriaController@save')->name('categoria-save');
+
+
+
+
+
+
+
 //* Insumos - CRUD//
 Route::get('/adm/insumos/nuevo', 'adm\InsumoController@index');
+Route::post('/adm/insumos/nuevo', 'adm\InsumoController@save')->name('insumo-nuevo');
 Route::get('/adm/insumos/editar', 'adm\InsumoController@editar');
 Route::get('/adm/insumos/eliminar', 'adm\InsumoController@eliminar');
-//listado de insumos de Alquler//
 Route::get('/adm/insumos/listado', 'adm\InsumoController@listado');

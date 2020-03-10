@@ -11,6 +11,10 @@ class InsumoController extends Controller
     {
         return view('adm.insumos.index');
     }
+    public function save()
+    {
+        return view('insumo-nuevo');
+    }
     public function listado()
     {
         return view('adm.insumos.listado');

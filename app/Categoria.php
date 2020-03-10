@@ -17,7 +17,9 @@ class Categoria extends Model
         
     ];
 
-    protected $casts = [
-        'data' => 'array'
-    ];
+    
+    public function marcas()
+    {
+        return $this->hasMany('App\Marca','id_categoria');
+    }
 }
