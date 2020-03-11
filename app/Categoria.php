@@ -16,6 +16,7 @@ class Categoria extends Model
         'data->logo',
         
     ];
+   
 
     
     public function marcas()
@@ -23,3 +24,4 @@ class Categoria extends Model
         return $this->hasMany('App\Marca','id_categoria');
     }
 }
+

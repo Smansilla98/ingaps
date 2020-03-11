@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
     <html lang="es">
         <head>
@@ -36,15 +37,12 @@
                                 <a class="nav-link" href="{{url('adm/consultas')}}"><div class="sb-nav-link-icon"></div>Consultas</a>
                                 <a class="nav-link" href="{{url('adm/mensajes')}}"><div class="sb-nav-link-icon"></div>Mensajes</a>
                                 <a class="nav-link" href="{{url('adm/cotizaciones')}}"><div class="sb-nav-link-icon"></div>Solicitud de cotizaciones</a>
-                          
-                            <div class="sb-sidenav-menu-heading">Categorias</div>
-                                <a class="nav-link" href="{{url('adm/categorias')}}"><div class="sb-nav-link-icon"></div>Categorias</a>
-
                             <div class="sb-sidenav-menu-heading">Equipos</div>
                                 <a class="nav-link collapsed" href="{{url('adm/equipos/alquiler')}}" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                     <div class="sb-nav-link-icon"></div>Alquiler<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                         </a>
                                             <div class="collapse" id="collapsePages" aria-labelledby="headingOne" data-parent="#sidenavAccordion"><nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                                <a class="nav-link" href="{{url('adm/categorias')}}">Categorias</a>
                                                 <a class="nav-link" href="{{url('adm/equipos/alquiler/nuevo')}}">Nuevo</a>
                                                 <a class="nav-link" href="{{url('adm/equipos/alquiler/listado')}}">Listado de Registros</a></nav>
                                             </div>
@@ -52,6 +50,7 @@
                                     <div class="sb-nav-link-icon"></div>Venta<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                         </a>
                                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion"><nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                                <a class="nav-link" href="{{url('adm/categorias')}}">Categorias</a>
                                                 <a class="nav-link" href="{{url('adm/equipos/venta/nuevo')}}">Nuevo</a>
                                                 <a class="nav-link" href="{{url('adm/equipos/venta/listado')}}">Listado de Registros</a></nav>
                                             </div>
@@ -62,10 +61,17 @@
                                             <a class="nav-link" href="{{url('adm/insumos/nuevo')}}">Nuevo</a>                        
                                             <a class="nav-link" href="{{url('adm/insumos/listado')}}">Listado de Registros</a></nav>
                                         <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages"></div>
-                </nav>
-                        </div>
+                                                      
+                                    </div>
+
+                                        <div class="sb-sidenav-menu-heading">Opciones Estaticas</div>
+                                        <a class="nav-link" href="{{url('adm/insumos/nuevo')}}">Textos Planos</a>                        
+                                        <a class="nav-link" href="{{url('adm/insumos/listado')}}">Imagenes</a></nav>
+                                    </nav>
+                                    
+                      
             </div>   
-          
+            
            
          
          <main class=" col-xl-10 py-md-4 pl-md-5 bd-content" role="main">

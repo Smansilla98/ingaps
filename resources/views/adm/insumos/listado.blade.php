@@ -3,7 +3,7 @@
 @extends('layouts.adm')
 @section('content')
 <h1 class='text-center'>
-Listado de Insumo</h1>
+Listado de Insumos</h1>
 
 <div class="table-responsive container">
   <table class="table">

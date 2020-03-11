@@ -57,22 +57,21 @@ Route::get('/adm/equipos/alquiler/editar', 'adm\AlquilerController@editar');
 Route::get('/adm/equipos/alquiler/eliminar', 'adm\AlquilerController@eliminar');
 //listado de equipos de Alquler//
 Route::get('/adm/equipos/alquiler/listado', 'adm\AlquilerController@listado');
-
-//categorias //
-
-Route::get('/adm/categorias', 'adm\CategoriaController@index')->name('categoria-index');
-Route::post('/adm/categorias', 'adm\CategoriaController@index')->name('categoria-index');
-Route::post('/adm/categorias', 'adm\CategoriaController@save')->name('categoria-save');
-
-
-
-
-
-
-
 //* Insumos - CRUD//
 Route::get('/adm/insumos/nuevo', 'adm\InsumoController@index');
 Route::post('/adm/insumos/nuevo', 'adm\InsumoController@save')->name('insumo-nuevo');
 Route::get('/adm/insumos/editar', 'adm\InsumoController@editar');
 Route::get('/adm/insumos/eliminar', 'adm\InsumoController@eliminar');
 Route::get('/adm/insumos/listado', 'adm\InsumoController@listado');
+
+
+
+
+//Categorias
+Route::get('/adm/categorias', 'adm\CategoriaController@index')->name('adm-categorias');
+
+Route::put('/adm/categorias','CategoriaController@put')-> name('categoria.put');
+Route::get('/adm/categorias/save', 'adm\CategoriaController@store')->name('adm-categoria');
+Route::post('/adm/categorias', 'adm\CategoriaController@store')->name('adm-categoria');
+Route::post('/adm/categoria/update', 'adm\CategoriaController@update')->name('adm-categoria-update');
+Route::get('/adm/categoria/destroy/{slug}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');

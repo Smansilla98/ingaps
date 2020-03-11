@@ -1,21 +1,22 @@
 @extends('layouts.adm')
 @section('content')
 <br><br><br>
-<h1 class='text-center'> Listado de Categorias</h1>
+
+<h1 class='text-center'>Listado de Categorias</h1>
 
 <div class="panel-body container">
-  <button class="btn btn-primary" data-toggle="modal" data-target="#nuevaCategoria">Nueva categoria</button>
-  <div class="modal fade" id="nuevaCategoria" tabindex="-1" role="dialog" aria-labelledby="nuevaCategoriaLabel" aria-hidden="true">
+  <button class="btn btn-primary" data-toggle="modal" data-target="#nuevaCategoria"  >Nueva categoria</button>
+   <div class="modal fade" id="nuevaCategoria" tabindex="-1" role="dialog" aria-labelledby="nuevaCategoriaLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="nuevaCategoriaLabel">Nueva categoria</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-          </button>
+            <button type="button" class="close" data-dismiss="modal"aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
     </div>
     <div class="modal-body">
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{route('adm-categorias')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label>Orden</label>
@@ -50,11 +51,17 @@
         </tr>
       </thead>
       <tbody>
-      </tbody>      
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+
     </table> 
     
   </div>
+
 @endsection
     
+
 
 

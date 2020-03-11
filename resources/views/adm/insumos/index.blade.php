@@ -1,9 +1,7 @@
 @extends('layouts.adm')
 @section('content')
 <br><br><br>
-<h1 class='text-center'>
-Ingreso de insumos
-  </h1>
+<h1 class='text-center'>Insumos</h1>
 <div class="panel-body container">
   <div class="panel-body container">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Categorias</button>
