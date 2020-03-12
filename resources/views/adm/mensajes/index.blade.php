@@ -2,7 +2,7 @@
 @section('content')
 <br><br><br>
 
-<div class="container-fluid">
+<div class="container">
   <h1 class='text-center'>
 Listado de Mensajes recibidos via Web
 </h1>

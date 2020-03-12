@@ -1,4 +1,6 @@
-<!-- Footer -->
+@extends('layouts.app')
+
+@section('content')<!-- Footer -->
 <footer class="page-footer font-small unique-color">
   <div class="container text-center text-md-left mt-5">
     <div class="row mt-2">
@@ -74,3 +76,4 @@
 
 </footer>
 <!-- Footer -->
+@endsection

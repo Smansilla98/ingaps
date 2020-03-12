@@ -2,6 +2,8 @@
 <br><br><br>
 @extends('layouts.adm')
 @section('content')
+<div class="panel-body container">
+
 <h1 class='text-center'>
 Listado de Equipos para Venta</h1>
 
@@ -19,16 +21,6 @@ Listado de Equipos para Venta</h1>
     </thead>
     <tbody>
       <tr>
-        @foreach($equipos as $equipo)
-      <tr>
-        <th scope="row">{{$equipo->id}}</th>
-        <td>{{$equipo->data['producto']}}</td>
-        <td>{{$equipo->data['ficha']}}</td>
-        <td>{{$equipo->data['imagen']}}</td>
-        <td>{{$equipo->data['descripcion']}}</td>
-        <td>{{$equipo->data['categoria']}}</td>
-        <td>{{$equipo->data['modelo']}}</td>
-      @endforeach
       <tr>
         
         <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Editar</button>
@@ -102,6 +94,7 @@ Listado de Equipos para Venta</h1>
       
     </tbody>
   </table>
+</div>
 </div>
 @endsection
 

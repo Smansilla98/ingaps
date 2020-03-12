@@ -12,9 +12,9 @@ use Illuminate\Database\Migrations\Migration;
 class CategoriaController extends Controller
 { 
     public function index()
-    {
-        $categorias = Categoria::latest()->paginate(5);
-        return view('/adm/categorias/index', compact('categorias'))->with('i', (request()->input('page',1)-1)*5);
+    {    $categorias = Categoria::all();
+        //return view('mensajes.index', compact('mensajes'));
+        return view('/adm/categorias/index')->with('categorias',$categorias);
     }
 
     public function create(Request $request)
@@ -38,7 +38,11 @@ class CategoriaController extends Controller
         }
 
         public function edit(Categoria $categoria){
-            return view('categorias.edit', compact('categoria'));
+            $categorias = Categoria::find($id);
+
+            // show the edit form and pass the nerd
+            return View::make('categorias.edit')
+                ->with('categoria', $categoria);
         }
         public function update(Request $request, Categoria $categoria){
             $request->validate([
@@ -50,11 +54,14 @@ class CategoriaController extends Controller
                 $categoria->update($request->all());
                 return redirect()->route('categorias.create')->with('sucess','categoria subida');
         }
-        public function destroy(Categoria $categoria)
-    {
+        public function destroy($categoria)
+        {     /* 
+            Esta función se encarga de eliminar una categoria
+            */$categoria = Categoria::where('categoria',$categorias);       
         $categoria->delete();
-        return redirect()->route('categorias.index')
-        ->with('sucess','categoria borrada');
-              
+        return redirect('/adm/categorias/');
     }
-}
+        }
+    
+
+

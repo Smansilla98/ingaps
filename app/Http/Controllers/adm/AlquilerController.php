@@ -28,3 +28,4 @@ class AlquilerController extends Controller
     return view('adm.equipos.alquiler.editar');
     }
 }
+

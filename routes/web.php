@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,11 +47,9 @@ Route::get('/adm/equipos/venta/eliminar', 'adm\VentaController@eliminar');
 //listado de equipos de venta//
 Route::get('/adm/equipos/venta/listado', 'adm\VentaController@listado');
 //* Categorias Nuevas - CRUD//
-Route::get('/adm/equipos/alquiler/nuevo', 'adm\CategoriaController@index')->name('adm-equipos-alquiler');
-Route::post('/adm/equipos/alquiler/nuevo', 'adm\CategoriaController@save')->name('categorias-nuevo'); 
 
 //* Equipos de Alquiler - CRUD//
-Route::get('/adm/equipos/alquiler/nuevo', 'adm\AlquilerController@index');
+Route::get('/adm/equipos/alquiler/nuevo', 'adm\AlquilerController@index')->name('adm-equipos-alquiler');
 Route::get('/adm/equipos/alquiler/editar', 'adm\AlquilerController@editar');
 Route::get('/adm/equipos/alquiler/eliminar', 'adm\AlquilerController@eliminar');
 //listado de equipos de Alquler//
@@ -64,14 +61,19 @@ Route::get('/adm/insumos/editar', 'adm\InsumoController@editar');
 Route::get('/adm/insumos/eliminar', 'adm\InsumoController@eliminar');
 Route::get('/adm/insumos/listado', 'adm\InsumoController@listado');
 
-
-
-
 //Categorias
+Route::get('adm/categorias/{id}','CategoriaController@destroy');
+Route::resource('adm/categorias','CategoriaController');
+Route::get('adm/categorias/{id}','CategoriaController@edit');
+Route::post('adm/categorias/{id}','CategoriaController@edit');
+
+
 Route::get('/adm/categorias', 'adm\CategoriaController@index')->name('adm-categorias');
+Route::get('/adm/categorias/destroy/{id}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');
+
 
 Route::put('/adm/categorias','CategoriaController@put')-> name('categoria.put');
 Route::get('/adm/categorias/save', 'adm\CategoriaController@store')->name('adm-categoria');
 Route::post('/adm/categorias', 'adm\CategoriaController@store')->name('adm-categoria');
 Route::post('/adm/categoria/update', 'adm\CategoriaController@update')->name('adm-categoria-update');
-Route::get('/adm/categoria/destroy/{slug}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');
+//Route::get('/adm/categoria/destroy/{slug}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');

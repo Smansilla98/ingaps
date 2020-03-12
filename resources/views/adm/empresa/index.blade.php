@@ -1,6 +1,8 @@
 @extends('layouts.adm')
 @section('content')
 
+<br><br><br>
+<div class="panel-body container">
 
 <form class=" border border-light p-5" action="{{route('datos-save')}}" method="post">
     @csrf
@@ -31,7 +33,7 @@
 <button class="btn btn-info btn-block" type="submit">Guardar Cambios</button>
 
 </form>
-
+</div>
 @endsection
 
 @section('javascript')

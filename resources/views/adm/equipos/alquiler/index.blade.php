@@ -1,6 +1,8 @@
 @extends('layouts.adm')
 @section('content')
 <br><br><br>
+<div class="panel-body container">
+
 <h1 class='text-center'>Ingreso de equipos para alquiler</h1>
 
 
@@ -9,13 +11,17 @@
   <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
 </div> 
   <div id = "msg"></div><br>
-  <form id="form1" method="POST">
+  <form action="" id="form1" method="POST">
+    @csrf
     <div class="form-group col-lg-12">
       <div class="form-group col-lg-12">
         <label>Seleccione Categoria</label>
-        <select type="select" id="categoria" name="categoria" class="form-control">
+        <select name="" name="" class="form-control" >
+          <option value="">Seleccione una</option>
+          @foreach($categorias as $categoria)
+            <option value="{{$categoria->id}}">{{$categoria->nombre}} ({{@$categoria->nombre}})</option>
+          @endforeach
       </div>
-    
       <div class="form-group col-lg-12">
         <input type="hidden" id="id" name="id" class="form-control">
         <label>Nombre del producto:</label>
@@ -46,6 +52,7 @@
       </div>
     </form>
   </div>
+</div>
 @endsection
 
 @section('javascript')

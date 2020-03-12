@@ -21,4 +21,14 @@ class Equipo extends Model
     protected $casts = [
         'data' => 'array'
     ];
+    public function categoria()
+    {
+        //dd($this->subcategoria->categoria);
+        //return $this->hasOneThrough('App\Subcategoria', 'App\Categoria','id_subcategoria','id_categoria');
+        return $this->categoria;
+    }
+
+
 }
+
+

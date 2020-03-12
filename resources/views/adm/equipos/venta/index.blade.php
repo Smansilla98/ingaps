@@ -1,6 +1,8 @@
 @extends('layouts.adm')
 @section('content')
 <br><br><br>
+<div class="panel-body container">
+
 <h1 class='text-center'>
 Ingreso de equipos para Venta
   </h1>
@@ -290,8 +292,14 @@ Ingreso de equipos para Venta
                           <select type="option" id="txtNombre" name="txtNombre" class="form-control">
                      </div>
                     </div>
+                    
+                      </div>
+                    </div>
+                    
                   </form>
+                  
                 </div>
+</div>
 @endsection
     
 

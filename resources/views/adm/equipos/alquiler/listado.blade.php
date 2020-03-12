@@ -2,6 +2,8 @@
 <br><br><br>
 @extends('layouts.adm')
 @section('content')
+<div class="panel-body container">
+
 <h1 class='text-center'>
 Listado de Equipos para Alquiler</h1>
 
@@ -107,6 +109,7 @@ Listado de Equipos para Alquiler</h1>
       
     </tbody>
   </table>
+</div>
 </div>
 @endsection
 

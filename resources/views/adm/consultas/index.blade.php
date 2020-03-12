@@ -1,7 +1,7 @@
 @extends('layouts.adm')
 @section('content')
 <br><br><br>
-
+<div class="panel-body container">
 <h1 class='text-center'>
 Listado de consultas recibidas via Web
 </h1>
@@ -36,5 +36,6 @@ Listado de consultas recibidas via Web
       @endforeach
     </tbody>
   </table>
+</div>
 </div>
 @endsection
