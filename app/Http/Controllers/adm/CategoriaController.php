@@ -30,7 +30,7 @@ class CategoriaController extends Controller
             ]);
             Categoria::create($request->all());
             
-            return redirect()->route('categorias.index');
+            return redirect('/adm/categorias/');
         }
         
         public function show(Categoria $categoria){
@@ -42,7 +42,7 @@ class CategoriaController extends Controller
         }
         public function update(Request $request, Categoria $categoria){
             $request->validate([
-                'id_categoria' => 'required',
+                'id' => 'required',
                 'nombre' => 'required',
                 'image' => 'nullable|max:5120',
                 'orden' => 'nullable|max:10',                           

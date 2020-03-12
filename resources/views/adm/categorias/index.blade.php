@@ -26,8 +26,10 @@
             <label>Nombre</label>
             <input name="nombre" type="text" class="form-control" placeholder="Nombre de la categoria">
         </div><hr>
+       
+
         <div class="custom-file">
-            <input required name="icono" type="file" class="custom-file-input" id="customFileLang" lang="es">
+            <input required name="logo" type="file" class="custom-file-input" id="customFileLang" lang="es">
             <label class="custom-file-label" for="customFileLang">Icono</label>
         </div>
     </div>
@@ -50,14 +52,16 @@
 
         </tr>
       </thead>
+      @foreach ($categorias as $categoria)          
       <tbody>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-
+      <td>{{$categoria->id}}</td>
+      <td>{{$categoria->orden}}</td>
+      <td>{{$categoria->nombre}}</td>
+      <td >{{$categoria->imagen}}</td>      
+      </tbody>
     </table> 
-    
+    @endforeach
+
   </div>
 
 @endsection

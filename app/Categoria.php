@@ -11,9 +11,8 @@ class Categoria extends Model
     protected $fillable =[
         'id',
         'orden',
-        'data',
-        'data->nombre',
-        'data->logo',
+        'nombre',
+        'image',
         
     ];
    
