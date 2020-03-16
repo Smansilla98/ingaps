@@ -8,7 +8,7 @@
         <div class="row mt-5 pt-5">
             <div class="col text-center">
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-8">Gestion Integral de Proyectos de Ingeniería</h1>
+        <h2 class="display-6">Gestión Integral de Proyectos de Ingeniería</h2>
         <p class="lead">Desarrollamos gestiones integrales a medida según los requerimientos y las necesidades de cada uno de nuestros proyectos. Acompañamos a nuestros clientes en la búsqueda de las mejores soluciones para sus industrias.</p>
       
       <div class="container">
@@ -46,6 +46,4 @@
     </div>   
     </div>
     </main>
-
-    <h2>fotos</h2>
 @endsection

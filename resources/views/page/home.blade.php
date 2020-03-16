@@ -106,13 +106,27 @@
          <h1>Ofrecemos Soluciones en<br>Ingeniería de alta calidad</h1>
      </div>
      <div class="col-6">
-        <h5>Ocupamos unlugar de preponderancia dentro dle rubro, atentiendo un amplio espectro de industrias y sectores diversos como: Gas, Petróleo, Mineria, Construcción, Agroindustria, Metalúrgicas en general, Automotriz, Industria Naval, etc.</h5>
+        <h5>Ocupamos unlugar de preponderancia dentro del rubro, atentiendo un amplio espectro de industrias y sectores diversos como: Gas, Petróleo, Mineria, Construcción, Agroindustria, Metalúrgicas en general, Automotriz, Industria Naval, etc.</h5>
     </div>
  </div>
 </div>
 <div class="container">
-    <img src="https://picsum.photos/seed/picsum/900">
+  <div class="row">
+    <div class="col-6">
+      <img src="https://picsum.photos/seed/picsum/700">
+    </div>
+  <div>
+      <div class="col-6">
+      <h2>Innovacion</h2>
+      <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
+      <h2>Trayectoria</h2>
+      <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
+      <h2>Calidad</h2>
+      <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
+      <h2>Seguridad</h2>
+      <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
+    </div>
 </div>
-
+  </div>
 
 @endsection

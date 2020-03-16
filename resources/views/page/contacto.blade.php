@@ -1,11 +1,9 @@
 @extends('layouts.page')
 @section('title','Contacto')
-
 @section('content')
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     
-    <style>
+    <style type="text/css">
       .map-container {
         height: 200px;
 
@@ -30,7 +28,7 @@
         position: center;
       }
       .box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+      
     </style>
 </head>
 <body>
@@ -46,73 +44,52 @@
       
 <section class="mb-2">
   <div class="row">
-
-      <div class="col-md-8 mb-md-0 mb-5">
-        <h3 class="font-weight-bold">Contacto</h3>
-        <h6 class="col-md-8 mb-md-0 mb-5">Para más información comuniquese con nuestros especialistas vía email a <mail to:info@ingaps.com.ar>info@ingaps.com.ar</mail> o llenando el formulario a continuación</h6>
-      
+      <div class="col-sm">
+        <h3 class="font-weight">Contacto</h3>
+        <h6 class="col-md-8">Para más información comuniquese con nuestros especialistas vía email a <mail to:info@ingaps.com.ar>info@ingaps.com.ar</mail> o llenando el formulario a continuación</h6>
           <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-              <!--Grid row-->
               <div class="row">
-
-                  <!--Grid column-->
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="name" class="">Nombre</label>  
                         <input type="text" id="name" name="name" class="form-control" placeholder="Ingresar nombre">
                       </div>
                   </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="email" class="">Correo</label>
                         <input type="text" id="email" name="email" class="form-control" placeholder="pablo@osole.es">
                       </div>
                   </div>
-                  <!--Grid column-->
-
               </div>
-              <!--Grid row-->
               <div class="row">
-
-                  <!--Grid column-->
                   <div class="col-md-12">
-
                       <div class="md-form">
                         <label for="message">Mensaje</label>
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Escriba su mensaje..."></textarea>
+                        <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea" placeholder="Escriba su mensaje..."></textarea>
                       </div>
-
                   </div>
               </div>
-              <!--Grid row-->
-
-          </form>
-
+          </form><br>
           <div class="text-center text-md-left">
               <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
           </div>
           <div class="status"></div>
       </div>
-      <!--Grid column-->
-
-      <div class="col-4 text-center card">
+      <div class="col-4 text-center card" id="caja">
           <ul class="list-unstyled mb-0">
             
               <li><i class="fa fa-map-marker fa-2x orange-text"></i>
-
-                  <p>San Francisco, CA 94126, USA</p>
+                  <p>DIRECCIÓN</p>
+                  
               </li>
 
-              <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                  <p>+ 01 234 567 89</p>
+              <li><i class="fa fa-phone  mt-4 fa-2x" aria-hidden="true"></i>
+                  <p>TELEFONO</p>
               </li>
 
               <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                  <p>contact@mdbootstrap.com</p>
+                  <p>EMAIL</p>
               </li>
           </ul>
       </div>
