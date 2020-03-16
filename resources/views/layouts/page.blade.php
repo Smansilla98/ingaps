@@ -3,27 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
     <!-- Scripts -->
     <script src="{{ asset('js/page.js') }}" defer></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.1/dist/sweetalert2.all.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-    <!-- Fonts -->
-
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    
-    <!-- Navbar para desktop -->
     <header class="d-none d-lg-block" style="background-color:transparent">
-    <!-- Menu superior -->
        <div class="top-menu border-bottom border-dark">
            <div class="container">
             <div class="row">
@@ -34,50 +25,29 @@
             </div>
            </div>
        </div>
-    <!-- Nav -->
     <div class="container">
         <div class="row my-4">
             <div class="col-sm-4 d-flex justify-content-between">
-
-                <a class="align-self-center @if(Request::is('/')) font-weight-bold @endif" href="{{url('/')}}"">INICIO</a>
-
-                <a class="align-self-center @if(Route::is('empresa')) font-weight-bold @endif" href="{{url('/empresa')}}"">EMPRESA</a>
-
-                <a class="align-self-center dropdown-content @if(Route::is('equipos*')) font-weight-bold @endif" href="{{url('/equipos')}}"">EQUIPOS</a>
-                
-                
-            </div>
+                <a class="align-self-center @if(Request::is('/')) font-weight-bold @endif" href="{{url('/')}}">INICIO</a>
+                <a class="align-self-center @if(Route::is('empresa')) font-weight-bold @endif" href="{{url('/empresa')}}">EMPRESA</a>
+                <a class="align-self-center dropdown-content @if(Route::is('equipos')) font-weight-bold @endif" href="{{url('/equipos')}}">EQUIPOS</a>
+                 </div>
             <div class="col-sm-4 d-flex flex-column justify-content-center">
                 <img src="{{ url('storage/ingapslogo.jpg') }}" class="img-fluid mx-auto">
             </div>
             <div class="col-sm-4 d-flex justify-content-between">
-
-                <a class="align-self-center @if(Route::is('insumos')) font-weight-bold @endif" href="{{url('/insumos')}}"">INSUMOS</a>
-
-                <a class="align-self-center @if(Route::is('ingenieria')) font-weight-bold @endif" href="{{url('/ingenieria')}}"">INGENIERIA</a>
-
-                <a class="align-self-center @if(Route::is('contacto')) font-weight-bold @endif" href="{{url('/contacto')}}"">CONTACTO</a>
-
+                <a class="align-self-center @if(Route::is('insumos')) font-weight-bold @endif" href="{{url('/insumos')}}">INSUMOS</a>
+                <a class="align-self-center @if(Route::is('ingenieria')) font-weight-bold @endif" href="{{url('/ingenieria')}}">INGENIERIA</a>
+                <a class="align-self-center @if(Route::is('contacto')) font-weight-bold @endif" href="{{url('/contacto')}}">CONTACTO</a>
             </div>
         </div>
     </div>
     </header>
-    <!-- Content -->
-    
     @yield('content')
-
-    <!-- Footer -->
     <footer class="container text-center text-md-left mt-5">
-        <!-- Grid row -->
          <div class="row mt-3 dark-grey-text">
-     
-           <!-- Grid column -->
            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-     
-             <!-- Content -->
              <h6 class="text-uppercase font-weight-bold">Logo ingaps</h6>
-             
-             
              <a class="btn-floating btn-sm rgba-white-slight mx-1">
                      <i class="fa fa-facebook-f"></i>
                    </a>
@@ -127,14 +97,12 @@
                <p>
                 <i class="fa fa-phone mr-3"></i> Telefono</p>
               <p>
-       
-             <p>
                <i class="fa fa-envelope mr-3"></i> Correo</p>
            </div>
          </div>
        </div>
        <div class="footer-copyright text-black-50 py-3">
-         <a class="dark-grey-text" href="https://osole.com.ar/"> By Osole</a>
+         <a class="dark-grey-text" href="https://osole.com.ar/" target="_blank"> By Osole</a>
        </div>
      </footer>
 
