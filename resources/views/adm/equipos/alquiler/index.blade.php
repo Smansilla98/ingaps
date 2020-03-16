@@ -18,9 +18,8 @@
         <label>Seleccione Categoria</label>
         <select name="" name="" class="form-control" >
           <option value="">Seleccione una</option>
-          @foreach($categorias as $categoria)
-            <option value="{{$categoria->id}}">{{$categoria->nombre}} ({{@$categoria->nombre}})</option>
-          @endforeach
+          
+            <option></option>
       </div>
       <div class="form-group col-lg-12">
         <input type="hidden" id="id" name="id" class="form-control">

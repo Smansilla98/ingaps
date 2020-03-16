@@ -124,11 +124,6 @@
       
     </tbody>
   </table> 
-
   </div>
   @endif
-
 @endsection
-
-
-

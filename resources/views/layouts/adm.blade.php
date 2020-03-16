@@ -75,7 +75,7 @@
            
          
           <div class="container-fluid mt-4">
-                @yield('content'))
+                @yield('content')
             </div>
             
         

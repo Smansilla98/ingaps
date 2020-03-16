@@ -13,7 +13,6 @@ class CategoriaController extends Controller
 { 
     public function index()
     {    $categorias = Categoria::all();
-        //return view('mensajes.index', compact('mensajes'));
         return view('/adm/categorias/index')->with('categorias',$categorias);
     }
 
@@ -40,7 +39,6 @@ class CategoriaController extends Controller
         public function edit(Categoria $categoria){
             $categorias = Categoria::find($id);
 
-            // show the edit form and pass the nerd
             return View::make('categorias.edit')
                 ->with('categoria', $categoria);
         }
@@ -54,14 +52,11 @@ class CategoriaController extends Controller
                 $categoria->update($request->all());
                 return redirect()->route('categorias.create')->with('sucess','categoria subida');
         }
-        public function destroy($categoria)
-        {     /* 
-            Esta función se encarga de eliminar una categoria
-            */$categoria = Categoria::where('categoria',$categorias);       
-        $categoria->delete();
-        return redirect('/adm/categorias/');
-    }
+        public function destroy(Categoria $categoria) {
+            $categoria->delete();
+        
+            return redirect()->route('/adm/categorias/index');
         }
+}
+
     
-
-

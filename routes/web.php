@@ -20,7 +20,48 @@ Auth::routes([
     'reset' => false 
     ]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+//Rutas publicas//
+
+//  Home
+Route::get('/', 'PageController@home')->name('inicio');
+Route::redirect('/home', '/');
+Route::redirect('/inicio', '/');
+
+
+
+//Empresa
+Route::get('/empresa', 'PageController@empresa')->name('empresa');
+
+//Ingenieria
+Route::get('/ingenieria', 'PageController@ingenieria')->name('ingenieria');
+
+//Contacto
+Route::get('/contacto', 'PageController@contacto')->name('contacto');
+
+//Insumos
+Route::get('/insumos', 'PageController@insumos')->name('insumos');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/adm', 'adm\AdmController@index')->name('adm');
 Route::post('/adm', 'adm\AdmController@index')->name('adm');
@@ -69,7 +110,8 @@ Route::post('adm/categorias/{id}','CategoriaController@edit');
 
 
 Route::get('/adm/categorias', 'adm\CategoriaController@index')->name('adm-categorias');
-Route::get('/adm/categorias/destroy/{id}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');
+Route::delete('/adm/categorias/destroy/{id}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');
+
 
 
 Route::put('/adm/categorias','CategoriaController@put')-> name('categoria.put');
@@ -77,3 +119,7 @@ Route::get('/adm/categorias/save', 'adm\CategoriaController@store')->name('adm-c
 Route::post('/adm/categorias', 'adm\CategoriaController@store')->name('adm-categoria');
 Route::post('/adm/categoria/update', 'adm\CategoriaController@update')->name('adm-categoria-update');
 //Route::get('/adm/categoria/destroy/{slug}', 'adm\CategoriaController@destroy')->name('adm-categoria-destroy');
+
+
+//Vistas
+

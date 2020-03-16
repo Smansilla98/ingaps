@@ -1,4 +1,7 @@
+@extends('layouts.page')
+@section('title','Contacto')
 
+@section('content')
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -22,23 +25,24 @@
       .map-container iframe {
         left: 0;
         top: 0;
-        height: 100%;
+        height: 120%;
         width: 100%;
-        position: absolute;
+        position: center;
       }
       .box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+  
+    <div class="container align-center col-8">
+      <div class="container-fluid">
+        <section class="px-md-7 mx-md-7 text-center text-lg-left dark-grey-text">
           <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.484269819567!2d-58.29827378468383!3d-34.74339197240891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dcf160d09e5%3A0x7e770c8ee45b00a!2sCrisys%20Ingenieria!5e0!3m2!1ses-419!2sar!4v1583780500417!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </section>
     </div>
-    <div class="container align-center col-8">
       
 <section class="mb-2">
   <div class="row">
@@ -56,7 +60,7 @@
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="name" class="">Nombre</label>  
-                        <input type="text" id="name" name="name" class="form-control">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Ingresar nombre">
                       </div>
                   </div>
                   <!--Grid column-->
@@ -65,7 +69,7 @@
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="email" class="">Correo</label>
-                        <input type="text" id="email" name="email" class="form-control">
+                        <input type="text" id="email" name="email" class="form-control" placeholder="pablo@osole.es">
                       </div>
                   </div>
                   <!--Grid column-->
@@ -79,7 +83,7 @@
 
                       <div class="md-form">
                         <label for="message">Mensaje</label>
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Escriba su mensaje..."></textarea>
                       </div>
 
                   </div>
@@ -89,7 +93,7 @@
           </form>
 
           <div class="text-center text-md-left">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
           </div>
           <div class="status"></div>
       </div>
@@ -121,3 +125,4 @@
 </body>
 </html>
 
+@endsection
