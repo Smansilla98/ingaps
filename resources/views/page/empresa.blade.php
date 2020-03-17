@@ -64,7 +64,7 @@
     </div>
     <div class="col-6">
       
-        <img src="https://picsum.photos/seed/picsum/100" class="card-img" alt="Alquiler">
+        <img src="images/soldadura.jpg" class="card-img" alt="Alquiler">
     </div>
 </div>
 </div>

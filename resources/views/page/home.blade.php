@@ -2,14 +2,13 @@
 @section('title','Inicio')
 <style>
     .slider {
-	width: 95%;
-	margin: auto;
+	width: 100%;
 	overflow: hidden;}
 
     .slider ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
+	width: 100%;
 	
 	animation: cambio 20s infinite alternate linear;}
 
@@ -33,73 +32,85 @@
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
     }
+
+    .jumbotron {
+  width: 60%;
+  margin: 10px auto;
+}
+
+
 </style>
 @section('content')
-
-<div class="container slider">
-    <ul>
-        
+<main class="jumbotron">
+<div class="container-fluid slider">
+    <ul>        
         <li>
-<img src="http://youghaltennisclub.ie/wp-content/uploads/2014/06/Tennis-Wallpaper-High-Definition-700x300.jpg" alt="">
-</li>
-        <li>
-<img src="http://welltechnically.com/wp-content/uploads/2013/08/android-wallpapers-700x300.jpg" alt="">
-</li>
-        <li>
-<img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" alt="">
+<img src="/images/image1.jpg" alt="">
 </li>
     </ul>
 </div>
-<div class="container" style="border-radius: 160%;">
-    <div class="row" id="cards">
-        <div class="col-6">
-          <img src="https://picsum.photos/seed/picsum/100" class="card-img" alt="Alquiler">
-            <div class="card-text">
-            </div>
-        </div>
-        <div class="col-6">
-            <img src="https://picsum.photos/seed/picsum/100" class="card-img" alt="Alquiler">
-              <div class="card-text">
-              </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6"style="background-image:url(../../images/retro1.jpg);color:white;padding: 60px;
+        border-radius: 40px;">
+          <h2>Alquiler de Equipos</h2>
+            <h4>En ingaps brindamos el servicio de alquiler de equipos de alta perfomance: retroexcavadoras, maquinaria de construcción, camiones, camiones pluma con caja y más</h4>
+              <button class="btn btn-light"href=#!>Ingresar</button>
           </div>
+        <div class="col-6"style="background-image:url(../../images/retro2.jpg);color:white;padding: 94px;
+        border-radius: 40px;">
+            <h2>Venta de Equipos</h2>
+              <h4>En ingaps brindamos el servicio de alquiler de equipos de alta perfomance: retroexcavadoras, maquinaria de construcción, camiones, camiones pluma con caja y más</h4>
+              <button  class="btn btn-light" href=#!>Ingresar</button>
+
+            </div>
       </div>
       <br>
-      
+            
 </div>
-<div class="container">
-<h4>Insumos destacados</h4>
 <div class="row">
 
-<div class="card" style="">
-    <div class="card-body">
-      <h6 class="card-title">Special title treatment</h6>
-      <img src="img_avatar.png" alt="Avatar" style="width:100%">
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  <div class="col-12">
+   <h2 style="font-size:22px; bolder">Insumos Destacados</h2> 
   </div>
-  <div class="card" style="">
-    <div class="card-body">
-      <h6 class="card-title">Special title treatment</h6>
-      <img src="img_avatar.png" alt="Avatar" style="width:100%">
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  
+  <div class="col-3">
+    <a href="familias/25/producto" >
+      <div class="img-dest card">
+        <img class="responsive-img" src="http://www.protfund.com.ar/imagenes/destacados/5_Carros de Bajada.jpg">
+      </div><br>
+       <h4 class="nom-dest" style="font-size:18px; bolder">Carros de Bajada</h4>
+    </a>
   </div>
-  <div class="card" style="">
-    <div class="card-body">
-      <h6 class="card-title">Special title treatment</h6>
-      <img src="img_avatar.png" alt="Avatar" style="width:100%">
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  <div class="col-3">
+    <a href="familias/25/producto" >
+      <div class="img-dest card">
+        <img class="responsive-img" src="http://www.protfund.com.ar/imagenes/destacados/5_Carros de Bajada.jpg">
+      </div><br>
+       <h4 class="nom-dest" style="font-size:18px; bolder">Carros de Bajada</h4>
+    </a>
   </div>
-  <div class="card" style="">
-    <div class="card-body">
-      <h6 class="card-title">Special title treatment</h6>
-      <img src="img_avatar.png" alt="Avatar" style="width:100%">
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  <div class="col-3">
+    <a href="familias/25/producto" >
+      <div class="img-dest card">
+        <img class="responsive-img" src="http://www.protfund.com.ar/imagenes/destacados/5_Carros de Bajada.jpg">
+      </div><br>
+       <h4 class="nom-dest" style="font-size:18px; bolder">Carros de Bajada</h4>
+    </a>
   </div>
+  <div class="col-3">
+    <a href="familias/25/producto" >
+      <div class="img-dest card">
+        <img class="responsive-img" src="http://www.protfund.com.ar/imagenes/destacados/5_Carros de Bajada.jpg">
+      </div><br>
+       <h4 class="nom-dest" style="font-size:18px; bolder">Carros de Bajada</h4>
+    </a>
+  </div>
+  <button class="btn align-center"style="color:#2956b2;">Ingresar a Insumos</button>
 </div>
-</div>
+
+</main>
+<br><br><br>
 <div class="container">
  <div class="row">
      <div class="col-6">
@@ -112,21 +123,22 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-6">
-      <img src="https://picsum.photos/seed/picsum/700">
+    <div class="col-8">
+      <img src="images/grua.png">
     </div>
   <div>
       <div class="col-6">
-      <h2>Innovacion</h2>
+
+        <i class="fas fa-lightbulb"></i><h2>Innovacion</h2>
       <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
-      <h2>Trayectoria</h2>
+      <i class="fas fa-chart-line"></i><h2>Trayectoria</h2>
       <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
-      <h2>Calidad</h2>
+      <i class="fas fa-medal"></i><h2>Calidad</h2>
       <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
-      <h2>Seguridad</h2>
+      <i class="fas fa-shield-alt"></i><h2>Seguridad</h2>
       <h6>Servicios de alta calidad que<br> contribuyan al crecimiento del sector</h6>
     </div>
 </div>
   </div>
-
+</div>
 @endsection

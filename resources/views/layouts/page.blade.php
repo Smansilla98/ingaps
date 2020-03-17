@@ -16,7 +16,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-      
+  .container{
+    font-family:"Montserrat";
+    color:#2956b2;
+    
+  }
   .searchbox{
     position: relative;
     display: inline-block;
@@ -67,9 +71,9 @@
   </head>
 <body>
     <header class="d-none d-lg-block" style="background-color:transparent">
-       <div class="top-menu border-bottom">
-           <div class="container">
-            <div class="row">
+       <div class="top-menu">
+           <div class="container justify-content">
+                         <div class="row" style="position:relative top:60px">
                 <div class="col-sm-2 d-flex border-leftpx-0">
                   <div class="searchbox animated zoomIn">
                     <form method="get">
@@ -79,17 +83,17 @@
                             <i class="fas fa-times"></i>
                             <p id="demo"></p>
                         </button>
-                    </form>
-    
+                    </form>    
                 </div>
                 </div>
                 <div class="col-sm-5 d-flex offset-sm-5 justify-content-end" style='text-align:left'>
-                  <i class="fas fa-2x fa-calendar-check" style="color:#2956b2"><button class="btn" style="background-color:white"><h5>Solicitar presupuesto</h5><span>Online, facil y sin cargo</span></button></div></i>
+                  <i class="fas fa-2x fa-calendar-check" style="color:#2956b2 padding-top:10px"><button class="btn" style="background-color:white"><h5>Solicitar presupuesto</h5><span>Online, facil y sin cargo</span></button></div></i>
             </div>
            </div>
        </div>
     <div class="container">
         <div class="row my-4">
+          
             <div class="col-sm-4 d-flex justify-content-between">
                 <a class="align-self-center @if(Request::is('/')) font-weight-bold @endif" href="{{url('/')}}">INICIO</a>
                 <a class="align-self-center @if(Route::is('empresa')) font-weight-bold @endif" href="{{url('/empresa')}}">EMPRESA</a>
@@ -107,49 +111,55 @@
     </div>
     </header>
     @yield('content')
-    <footer class="container text-center text-md-left mt-5">
-         <div class="row mt-3 dark-grey-text">
+    <footer class="container text-center text-md-left mt-5" 
+    style="-webkit-box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
+    box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
+    padding:30px">
+         <div class="row mt-3 ">
            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-             <h6 class="text-uppercase font-weight-bold">Logo ingaps</h6>
+            <img src="{{ url('images/ingapslogo.jpg') }}" style="width:40%;" class="img-fluid mx-auto"><br><br>
              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                     <i class="fa fa-facebook-f"></i>
+                     <i class="fab fa-lg fa-facebook-f"></i>
                    </a>
              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                     <i class="fa fa-linkedin"></i>
-                   </a>
+                     <i class="fab fa-lg fa-linkedin"></i>
+                   </a><br><br>
+                   <a  href="https://osole.com.ar/" target="_blank"> By Osole</a>
+
            </div>
            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
              <h6 class="text-uppercase font-weight-bold">Secciones</h6>
              <p>
-               <a class="dark-grey-text" href="{{url('/')}}">Inicio</a>
+               <a  href="{{url('/')}}">Inicio</a>
              </p>
              <p>
-               <a class="dark-grey-text" href="{{url('/empresa')}}">Empresa</a>
+               <a  href="{{url('/empresa')}}">Empresa</a>
              </p>
              <p>
-                <a class="dark-grey-text" href="{{url('/ingenieria')}}">Ingenieria</a>
+                <a  href="{{url('/ingenieria')}}">Ingenieria</a>
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"><br>
                 <p>
-                  <a class="dark-grey-text" href="{{url('/fabricacion')}}">Fabricación</a>
+                  <a  href="{{url('/fabricacion')}}">Fabricación</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="{{url('/servicios')}}">Servicios</a>
+                  <a  href="{{url('/servicios')}}">Servicios</a>
                 </p>
                 <p>
-                   <a class="dark-grey-text" href="{{url('/insumos')}}">Insumos</a>
+                   <a  href="{{url('/insumos')}}">Insumos</a>
                  </p>
                </div>
                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"><br>
                 <p>
-                  <a class="dark-grey-text" href="{{url('/equipos')}}">Equipos</a>
+                  <a  href="{{url('/equipos')}}">Equipos</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="{{url('/presupuesto')}}">Solicitar presupuesto</a>
+                  <a  href="{{url('/presupuesto')}}">Solicitar presupuesto</a>
                 </p>
                 <p>
-                   <a class="dark-grey-text" href="{{url('/contacto')}}">Contacto</a>
+                   <a  href="{{url('/contacto')}}">Contacto</a>
                  </p>
                </div>
           
@@ -163,9 +173,6 @@
                <i class="fa fa-envelope mr-3"></i> Correo</p>
            </div>
          </div>
-       </div>
-       <div class="footer-copyright text-black-50 py-3">
-         <a class="dark-grey-text" href="https://osole.com.ar/" target="_blank"> By Osole</a>
        </div>
      </footer>
 

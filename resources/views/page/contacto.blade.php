@@ -15,7 +15,7 @@
     
     <style type="text/css">
       .map-container {
-        height: 200px;
+        height: 180px;
 
         position: relative;
       }
@@ -23,7 +23,7 @@
       .map-container iframe {
         left: 0;
         top: 0;
-        height: 120%;
+        height: 110%;
         width: 100%;
         position: center;
       }
@@ -33,7 +33,7 @@
 </head>
 <body>
   
-    <div class="container align-center col-8">
+    <div class="container align-center col-11">
       <div class="container-fluid">
         <section class="px-md-7 mx-md-7 text-center text-lg-left dark-grey-text">
           <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
@@ -42,12 +42,13 @@
         </section>
     </div>
       
-<section class="mb-2">
+<section class="container align-center">
   <div class="row">
       <div class="col-sm">
-        <h3 class="font-weight">Contacto</h3>
-        <h6 class="col-md-8">Para más información comuniquese con nuestros especialistas vía email a <mail to:info@ingaps.com.ar>info@ingaps.com.ar</mail> o llenando el formulario a continuación</h6>
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <form class="text-left p-5"  method="POST">
+          <h3 class="font-weight">Contacto</h3>
+          <h6 >Para más información comuniquese con nuestros especialistas vía email a <mail to:info@ingaps.com.ar>info@ingaps.com.ar</mail> o llenando el formulario a continuación</h6>
+        
               <div class="row">
                   <div class="col-md-12">
                       <div class="md-form mb-0">
@@ -69,21 +70,19 @@
                         <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea" placeholder="Escriba su mensaje..."></textarea>
                       </div>
                   </div>
-              </div>
-          </form><br>
+              </div><br>
+
           <div class="text-center text-md-left">
               <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
           </div>
           <div class="status"></div>
       </div>
-      <div class="col-4 text-center card" id="caja">
+    </form>
+      <div class="col-4 text-center card" style="padding:60px;">
           <ul class="list-unstyled mb-0">
-            
               <li><i class="fa fa-map-marker fa-2x orange-text"></i>
                   <p>DIRECCIÓN</p>
-                  
               </li>
-
               <li><i class="fa fa-phone  mt-4 fa-2x" aria-hidden="true"></i>
                   <p>TELEFONO</p>
               </li>
