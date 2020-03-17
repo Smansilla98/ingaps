@@ -34,7 +34,7 @@
 <body>
   
     <div class="container align-center col-11">
-      <div class="container-fluid">
+      <div class="container">
         <section class="px-md-7 mx-md-7 text-center text-lg-left dark-grey-text">
           <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.484269819567!2d-58.29827378468383!3d-34.74339197240891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dcf160d09e5%3A0x7e770c8ee45b00a!2sCrisys%20Ingenieria!5e0!3m2!1ses-419!2sar!4v1583780500417!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -53,13 +53,13 @@
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="name" class="">Nombre</label>  
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Ingresar nombre">
+                        <input type="text" id="name" name="name" class="form-control" style="border-radius: 8px;" placeholder="Ingresar nombre">
                       </div>
                   </div>
                   <div class="col-md-12">
                       <div class="md-form mb-0">
                         <label for="email" class="">Correo</label>
-                        <input type="text" id="email" name="email" class="form-control" placeholder="pablo@osole.es">
+                        <input type="text" id="email" name="email" class="form-control" style="border-radius: 8px;" placeholder="pablo@osole.es">
                       </div>
                   </div>
               </div>
@@ -67,19 +67,22 @@
                   <div class="col-md-12">
                       <div class="md-form">
                         <label for="message">Mensaje</label>
-                        <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea" placeholder="Escriba su mensaje..."></textarea>
+                        <textarea type="text" id="message" name="message" rows="5" class="form-control"  style="border-radius: 8px;" placeholder="Escriba su mensaje..."></textarea>
                       </div>
                   </div>
               </div><br>
 
           <div class="text-center text-md-left">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+              <a class="btn btn-primary" style="color:white" onclick="document.getElementById('contact-form').submit();">Enviar</a>
           </div>
           <div class="status"></div>
       </div>
     </form>
-      <div class="col-4 text-center card" style="padding:60px;">
-          <ul class="list-unstyled mb-0">
+      <div class="col-5 text-center border-box" 
+          style="padding:100px;-webkit-box-shadow: -2px 4px 111px -24px rgba(0,0,0,0.37);
+                  -moz-box-shadow: -2px 4px 111px -24px rgba(0,0,0,0.37);
+                  box-shadow: -2px 4px 111px -24px rgba(0,0,0,0.37);border-radius: 10px 10px 10px 10px;">
+          <ul class="list-unstyled">
               <li><i class="fa fa-map-marker fa-2x orange-text"></i>
                   <p>DIRECCIÓN</p>
               </li>
@@ -92,9 +95,8 @@
               </li>
           </ul>
       </div>
-    </div>
 
-    </section>
+    </section><br><br><br>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

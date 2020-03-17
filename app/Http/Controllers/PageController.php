@@ -36,7 +36,23 @@ class PageController extends Controller
 
     public function insumos()
         { return view('page.insumos');
-    
+        }
+
+    public function servicios(){
+        return view('page.servicios');
+    }
+
+    public function equipos()
+        { return view('page.equipos');
+        }
+
+        public function venta()
+            { return view('page.venta');
+            }
+
+            public function alquiler()
+                { return view('page.alquiler');
+             
 
     /*public function categorias()
     {

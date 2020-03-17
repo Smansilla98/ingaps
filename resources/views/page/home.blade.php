@@ -106,7 +106,7 @@
        <h4 class="nom-dest" style="font-size:18px; bolder">Carros de Bajada</h4>
     </a>
   </div>
-  <button class="btn align-center"style="color:#2956b2;">Ingresar a Insumos</button>
+  <button class="btn"style="color:#2956b2;" href="{{url('/insumos')}}">Ingresar a Insumos</button>
 </div>
 
 </main>

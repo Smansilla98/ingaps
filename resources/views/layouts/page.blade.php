@@ -97,10 +97,10 @@
             <div class="col-sm-4 d-flex justify-content-between">
                 <a class="align-self-center @if(Request::is('/')) font-weight-bold @endif" href="{{url('/')}}">INICIO</a>
                 <a class="align-self-center @if(Route::is('empresa')) font-weight-bold @endif" href="{{url('/empresa')}}">EMPRESA</a>
-                <a class="align-self-center dropdown-content @if(Route::is('equipos')) font-weight-bold @endif" href="{{url('/equipos')}}">EQUIPOS</a>
+                <a class="align-self-center @if(Route::is('equipos')) font-weight-bold @endif" href="{{url('/equipos')}}">EQUIPOS</a>
                  </div>
             <div class="col-sm-4 d-flex flex-column justify-content-center">
-                <img src="{{ url('images/ingapslogo.jpg') }}" class="img-fluid mx-auto">
+                <img src="{{ url('images/ingapslogo.jpg') }}" href="{{url('/')}}"  class="img-fluid mx-auto">
             </div>
             <div class="col-sm-4 d-flex justify-content-between">
                 <a class="align-self-center @if(Route::is('insumos')) font-weight-bold @endif" href="{{url('/insumos')}}">INSUMOS</a>
@@ -112,9 +112,8 @@
     </header>
     @yield('content')
     <footer class="container text-center text-md-left mt-5" 
-    style="-webkit-box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
-    -moz-box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
-    box-shadow: 0px -6px 43px 20px rgba(0,0,0,0.12);
+    style="
+    box-shadow: 0px 0px  rgba(0,0,0,0.12);
     padding:30px">
          <div class="row mt-3 ">
            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">

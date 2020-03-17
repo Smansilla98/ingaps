@@ -42,11 +42,18 @@ Route::get('/contacto', 'PageController@contacto')->name('contacto');
 //Insumos
 Route::get('/insumos', 'PageController@insumos')->name('insumos');
 
+//Servicios
+Route::get('/servicios', 'PageController@servicios')->name('servicios');
 
-
-
-
-
+//Equipos
+Route::get('/equipos', 'Pagecontroller@equipos')->name('equipos');
+Route::post('/equipos', 'Pagecontroller@equipos')->name('equipos');
+//Equipos-Alquiler
+Route::get('/equipos/alquiler', 'PageController@alquiler')->name('alquiler');
+Route::post('/equipos/alquiler', 'PageController@alquiler')->name('alquiler');
+//Equipos-Venta
+Route::get('/equipos/venta', 'PageController@venta')->name('venta');
+Route::post('/equipos/venta', 'PageController@venta')->name('venta');
 
 
 
